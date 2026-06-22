@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subdomain Takeover Proof of Concept</title>
+    <style>
+        :root {
+            --bg-color: #0f0f12;
+            --card-bg: #16161a;
+            --accent-pink: #ec4899;
+            --text-primary: #e4e4e7;
+            --text-muted: #a1a1aa;
+            --border-color: #27272a;
+        }
+
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .terminal-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-top: 3px solid var(--accent-pink);
+            border-radius: 6px;
+            padding: 40px;
+            max-width: 600px;
+            width: 90%;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .prompt {
+            color: var(--accent-pink);
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            margin-top: 0;
+            color: var(--text-primary);
+            letter-spacing: -0.5px;
+        }
+
+        h1 span {
+            color: var(--accent-pink);
+        }
+
+        p {
+            color: var(--text-muted);
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        .divider {
+            border: 0;
+            height: 1px;
+            background: var(--border-color);
+            margin: 25px 0;
+        }
+
+        .contact-section {
+            font-size: 0.9rem;
+        }
+
+        .contact-label {
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-primary);
+            font-size: 0.8rem;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .email {
+            color: var(--accent-pink);
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="terminal-card">
+        <div class="prompt">~$ ./poc_verify.sh</div>
+        <h1>Subdomain Takeover <span>PoC</span></h1>
+        
+        <p>This is a non-destructive Proof of Concept (PoC) for a responsible vulnerability disclosure program.</p>
+        <p>If this page is rendering successfully, it confirms that the subdomain point-of-presence is currently misconfigured or unclaimed, leaving it vulnerable to a takeover.</p>
+        
+        <div class="divider"></div>
+        
+        <div class="contact-section">
+            <span class="contact-label">Required Contact:</span>
+            <span class="email">aaronamranba@gmail.com</span>
+        </div>
+    </div>
+
+</body>
+</html>
